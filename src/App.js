@@ -1,6 +1,7 @@
 import "./App.css";
 
-function App({ img, name, about, skills, skillBackground }) {
+function App({ img, name, about, skills }) {
+  console.log(skills);
   return (
     <div className="App">
       <div className="card">
@@ -11,9 +12,17 @@ function App({ img, name, about, skills, skillBackground }) {
         <div className="half">
           <div className="title">{name}</div>
           <p className="about"> {about} </p>
-          <div className="skills" style={{ backgroundColor: skillBackground }}>
-            {skills}
-          </div>
+          {skills.map((skill) => (
+            <div
+              className="skills"
+              style={{ backgroundColor: skill.skillBackground }}
+            >
+              <div>
+                {skill.skill}
+                {skill.emoji}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

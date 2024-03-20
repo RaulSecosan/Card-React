@@ -9,30 +9,35 @@ root.render(
     <App
       img="jaguar.jpg"
       name="Raul Secosan"
-      about=" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrumollit anim id est laborum."
-      skills={["HTML + CSS", "JAVASCRIPT"]}
-      skillBackground="red"
+      about=" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      skills={[
+        { skill: "HTSS-CSS ", emoji: "😀", skillBackground: "red" },
+        { skill: "JAVASCRIPT ", emoji: "😎", skillBackground: "blue" },
+        { skill: "FIREBASE", emoji: "😎", skillBackground: "orange" },
+        { skill: "FIRESTORE", emoji: "😎", skillBackground: "yellow" },
+      ]}
     />
-
-    <App
-      img="jaguar.jpg"
-      name="Seco"
-      about=" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrumollit anim id est laborum."
-      skills={["HTML + CSS", "JAVASCRIPT"]}
-      skillBackground="yellow"
-    />
-
     <App
       img="jaguar.jpg"
       name="Raul"
-      about=" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrumollit anim id est laborum."
-      skills={["HTML + CSS", "JAVASCRIPT"]}
+      about=" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      skills={[
+        { skill: "Web", emoji: "😀", skillBackground: "GREEN" },
+        { skill: "Full", emoji: "😎", skillBackground: "PURPLE" },
+        { skill: "Stack", emoji: "😎", skillBackground: "#161" },
+        { skill: "Nice", emoji: "😎", skillBackground: "yellow" },
+      ]}
+    />
+    <App
+      img="jaguar.jpg"
+      name="Seco"
+      about=" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      skills={[
+        { skill: "DATABASE", emoji: "😀", skillBackground: "#0001" },
+        { skill: "JSON", emoji: "😎", skillBackground: "blue" },
+        { skill: "API", emoji: "😎", skillBackground: "orange" },
+        { skill: "REST", emoji: "😎", skillBackground: "#2001" },
+      ]}
     />
   </React.StrictMode>
 );
